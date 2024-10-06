@@ -1,0 +1,39 @@
+.slideshow {
+  position: relative;
+  width: 100%; /* Set the width to 100% of the parent container */
+  max-width: 1200px; /* Optional: Limit max width to keep it from stretching too much */
+  margin: auto; /* Center the slideshow */
+  overflow: hidden; /* Hide overflow to ensure images are not displayed outside the container */
+  height: 400px; /* Set a fixed height for the slideshow */
+}
+
+.slideshow img {
+  position: absolute;
+  width: 100%; /* Set width to 100% to make it responsive */
+  height: 100%; /* Set height to 100% to cover the container */
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.slideshow img.active {
+  opacity: 1; /* Fully visible for the active image */
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 30px;
+  cursor: pointer;
+}
+

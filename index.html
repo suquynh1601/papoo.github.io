@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaPooShop</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+<body>
+    <header>
+        <header>
+            <img src="images/logo1.png" alt="BallyShop Logo" class="logo"> <!-- Thêm logo vào đây -->
+            <div class="header-buttons">
+                <ul class="nav-right">
+                    <li><a href="login.html" class="details-button">Đăng Nhập</a></li>
+                    <li><a href="login.html" class="details-button">Đăng Ký</a></li>
+                </ul>
+                <nav class="nav-right">
+                    <a href="#home" class="details-button">Trang chủ</a>
+                    <a href="gioithieu.html" class="details-button">Giới thiệu</a>
+                    <a href="lienhe.html" class="details-button">Liên hệ</a>
+                    <a href="gopy.html" class="details-button">Góp ý</a>
+                </nav>
+            </div>
+        </header>
+    </header>
+    <marquee behavior="" direction="left">
+       <h2>Chào mừng bạn đến với website của BallyShop</h2>     
+    </marquee>
+    <div class="slideshow">
+      <img src="images/lotchuot.jpg" alt="Image 1" class="active">
+      <img src="images/bplgitech.webp" alt="Image 2">
+      <img src="images/sacdp.jpg" alt="Image 3">
+      <img src="images/chuot.jpeg" alt="Image 4">
+      <div class="controls">
+        <button class="prev"><h2><<</h2></button>
+        <button class="next"><h2>>></h2></button>
+    </div>
+    </div>
+    <script src="slideshow.js"></script>
+    <div class="container">
+        <div id="home" class="welcome-message">
+            <h2>Chào mừng bạn đến với website của BallyShop</h2>
+            <div class="product-grid">
+                <div class="product-item" onclick="showProductDetails('lotchuot')">
+                    <img src="images/lotchuot.jpg" alt="SP#1">
+                    <p>Lót chuột Anime girl</p>
+                    <p>Giá: 100.000 VND</p>
+                </div>
+                <div class="product-item" onclick="showProductDetails('banphim')">
+                    <img src="images/bplgitech.webp" alt="Bàn phìm logitech">
+                    <p>Bàn phím Logitech</p>
+                    <p>Giá: 1.000.000 VND</p>
+                </div>
+               
+                <div class="product-item" onclick="showProductDetails('sacduphong')">
+                    <img src="images/sacdp.jpg" alt="Sạc dự phòng">
+                    <p>Sạc dự phòng
+                        <p>Giá: 150.000 VND</p>
+                    </p>
+                </div>
+                <div class="product-item" onclick="showProductDetails('chuot')">
+                 <img src="images/chuot.jpeg" alt="Sản phẩm 4">
+                    <p>Chuột Logitech
+                        <p>Giá: 200.000 VND</p>
+                    </p>
+                </div>
+                <div class="product-item" onclick="showProductDetails('chuot1')">
+                 <img src="images/chuot.jpeg" alt="Sản phẩm 5">
+                    <p>Chuột Logitech
+                        <p>Giá: 200.000 VND</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; PooToyShop.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
